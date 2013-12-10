@@ -95,10 +95,17 @@ namespace syncFlounderCamera
                 if (destToggled == false) {
                     AddRuntimeMessage(GH_RuntimeMessageLevel.Warning, "Viewport '" + DestViewportName + "' does not exist!");
                 }
+
+
 				if(srcToggled == true && destToggled == true) {
-					destViewport.SetCameraLocations(srcViewport.CameraTarget, srcViewport.CameraLocation);
-					destViewport.Camera35mmLensLength = srcViewport.Camera35mmLensLength;
-					destViewport.CameraUp = srcViewport.CameraUp;
+					foreach (Rhino.Display.RhinoView thisview in RhinoDoc.ActiveDoc.Views) {
+						if (DestViewportName == thisview.ActiveViewport.Name) {
+							destViewport = thisview.ActiveViewport;
+							destViewport.SetCameraLocations(srcViewport.CameraTarget, srcViewport.CameraLocation);
+							destViewport.Camera35mmLensLength = srcViewport.Camera35mmLensLength;
+							destViewport.CameraUp = srcViewport.CameraUp;
+						}
+					}
 				}
 
             }

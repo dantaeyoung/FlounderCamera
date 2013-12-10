@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "getFlounderCamera", "getNamedCamera\getFlounderCamera.csproj", "{31AE1139-60B1-4A08-AD5A-423E44261428}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "getFlounderCamera", "getFlounderCamera\getFlounderCamera.csproj", "{31AE1139-60B1-4A08-AD5A-423E44261428}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "setFlounderCamera", "setNamedCamera\setFlounderCamera.csproj", "{556C31A6-FB90-4FED-A6CE-53CC20AD878A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "setFlounderCamera", "setFlounderCamera\setFlounderCamera.csproj", "{556C31A6-FB90-4FED-A6CE-53CC20AD878A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "syncFlounderCamera", "syncFlounderCamera\syncFlounderCamera.csproj", "{3B26C3FA-B13A-4AB8-AFC2-AF5B34BCD32D}"
 EndProject
